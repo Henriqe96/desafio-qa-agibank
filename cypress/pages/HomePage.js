@@ -1,42 +1,32 @@
 class HomePage {
   elements = {
-    // 🔍 Mapeia todos os artigos presentes na página
+    // 🔍 Mapeia todos os cards de artigos
     articleCards: () => cy.get('article'),
 
-    // 🖼️ Mapeia a imagem do primeiro artigo
-    firstArticleImage: () => cy.get('article img').first(),
+    // 🖼️ Mapeia a imagem/card do primeiro artigo
+    firstArticleCard: () => cy.get('article').first(),
 
-    // 📝 Mapeia o título (link) do primeiro artigo na listagem
-    firstArticleTitle: () => cy.get('article h2 a, article h1 a').first(),
-
-    // 📄 Conteúdo interno da notícia (página do artigo aberto)
+    // 📄 Conteúdo interno do artigo aberto
     postContent: () => cy.get('.entry-content, article'),
 
-    // 🔍 Ícone de busca (Lupa) e campo de texto
-    searchIcon: () => cy.get('.ast-search-icon, a.search-icon'),
-    searchInput: () => cy.get('input[type="search"].search-field'),
-    searchSubmit: () => cy.get('form.search-form input[type="submit"]')
-  }
+    // 🔍 Ícone da Lupa
+    searchIcon: () => cy.get('.ast-search-icon, a.search-icon').first(),
 
-  // Acede à página principal do Blog
+    // ⌨️ Campo de pesquisa
+    searchInput: () => cy.get('input[type="search"].search-field')
+  };
+
   visit() {
     cy.visit('/');
   }
 
-  // Clica na imagem da primeira notícia
-  clickFirstArticleImage() {
-    this.elements.firstArticleImage().click({ force: true });
+  clickFirstArticleCard() {
+    this.elements.firstArticleCard().click({ force: true });
   }
 
-  // Clica no título da primeira notícia
-  clickFirstArticleTitle() {
-    this.elements.firstArticleTitle().click({ force: true });
-  }
-
-  // Pesquisa por um termo no campo de busca (Lupa)
-  searchFor(term) {
+  // Método que estava a faltar:
+  clickSearchIcon() {
     this.elements.searchIcon().click({ force: true });
-    this.elements.searchInput().type(`${term}{enter}`);
   }
 }
 

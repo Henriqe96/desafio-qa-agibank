@@ -1,0 +1,2 @@
+cypress/reports/** linguist-vendored
+*.html linguist-detectable=false

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2026-09-29T13:38:08.736Z",
-    "end": "2026-09-29T13:38:10.285Z",
-    "duration": 1549,
+    "start": "2026-09-29T13:52:01.531Z",
+    "end": "2026-09-29T13:52:02.204Z",
+    "duration": 673,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "758fd500-b971-43f5-b005-ef8fc0021b12",
+      "uuid": "9b0fde6c-4dd2-420b-818e-f4a0101746d7",
       "title": "",
       "fullFile": "cypress\\e2e\\test2_open_article.cy.js",
       "file": "cypress\\e2e\\test2_open_article.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "002a5f37-4e1a-4fd3-81f0-171f434e2632",
+          "uuid": "f734057c-f12f-4a3e-8561-7b2feddf04df",
           "title": "Cenário 2: Navegação e Abertura de Artigo",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve abrir a página do artigo ao clicar no card",
               "fullTitle": "Cenário 2: Navegação e Abertura de Artigo Deve abrir a página do artigo ao clicar no card",
               "timedOut": null,
-              "duration": 1488,
+              "duration": 625,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// 1. Clica no primeiro card de artigo\n_HomePage.default.clickFirstArticleCard();\n// 2. Valida que o conteúdo interno da notícia está visível\n_HomePage.default.elements.postContent().should('be.visible');\n// 3. Valida que a URL foi alterada (não está mais na página inicial)\ncy.url().should('not.eq', Cypress.config().baseUrl);",
               "err": {},
-              "uuid": "a95ac54f-b84d-40d6-ac6c-f025cad6379c",
-              "parentUUID": "002a5f37-4e1a-4fd3-81f0-171f434e2632",
+              "uuid": "d60e83e4-a405-4b8c-b791-618b35214523",
+              "parentUUID": "f734057c-f12f-4a3e-8561-7b2feddf04df",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a95ac54f-b84d-40d6-ac6c-f025cad6379c"
+            "d60e83e4-a405-4b8c-b791-618b35214523"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1488,
+          "duration": 625,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

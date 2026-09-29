@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2026-09-29T13:38:01.824Z",
-    "end": "2026-09-29T13:38:06.074Z",
-    "duration": 4250,
+    "start": "2026-09-29T13:51:57.706Z",
+    "end": "2026-09-29T13:51:59.590Z",
+    "duration": 1884,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "358b7188-e170-4cdc-9d06-bf4f64327981",
+      "uuid": "1778e8f9-5e83-4975-a98b-d298159eec93",
       "title": "",
       "fullFile": "cypress\\e2e\\test1_article_list.cy.js",
       "file": "cypress\\e2e\\test1_article_list.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "13839b82-c8a6-4d46-a1e5-454a411f66b9",
+          "uuid": "902bbe2c-94c8-4cf2-8aa3-01a3c13c6c5d",
           "title": "Cenário 1: Validação da Listagem de Artigos",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve exibir os cards de artigos na página principal",
               "fullTitle": "Cenário 1: Validação da Listagem de Artigos Deve exibir os cards de artigos na página principal",
               "timedOut": null,
-              "duration": 4185,
+              "duration": 1849,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// Verifica se existem artigos visíveis na página\n_HomePage.default.elements.articleCards().should('be.visible').and('have.length.greaterThan', 0);",
               "err": {},
-              "uuid": "5328c926-c302-4aa1-b8c7-2699708c1754",
-              "parentUUID": "13839b82-c8a6-4d46-a1e5-454a411f66b9",
+              "uuid": "297cf54f-9097-45d7-a8b6-6ba64d1326d6",
+              "parentUUID": "902bbe2c-94c8-4cf2-8aa3-01a3c13c6c5d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5328c926-c302-4aa1-b8c7-2699708c1754"
+            "297cf54f-9097-45d7-a8b6-6ba64d1326d6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4185,
+          "duration": 1849,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

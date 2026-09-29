@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2026-09-29T13:38:12.296Z",
-    "end": "2026-09-29T13:38:12.981Z",
-    "duration": 685,
+    "start": "2026-09-29T13:52:04.206Z",
+    "end": "2026-09-29T13:52:04.738Z",
+    "duration": 532,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8272debf-1096-4b08-a4a9-fa13888687fc",
+      "uuid": "88607564-3620-4c2b-893a-5a687a67f0cf",
       "title": "",
       "fullFile": "cypress\\e2e\\test3_search_bug.cy.js",
       "file": "cypress\\e2e\\test3_search_bug.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ae9ec7f6-817e-48e9-a735-54536acd43d6",
+          "uuid": "0970f3d2-1d0b-4e87-9e27-63a3ed6e40b1",
           "title": "Cenário 3: Evidência de Bug na Busca (Lupa)",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve evidenciar que o campo de texto de busca não é exibido ao clicar na lupa",
               "fullTitle": "Cenário 3: Evidência de Bug na Busca (Lupa) Deve evidenciar que o campo de texto de busca não é exibido ao clicar na lupa",
               "timedOut": null,
-              "duration": 631,
+              "duration": 490,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// 1. Clica no ícone da lupa\n_HomePage.default.clickSearchIcon();\n// 2. Valida que o campo de busca NÃO EXISTE no DOM\n_HomePage.default.elements.searchInput().should('not.exist');",
               "err": {},
-              "uuid": "4d47e593-0ce2-4524-863f-c70b44df7250",
-              "parentUUID": "ae9ec7f6-817e-48e9-a735-54536acd43d6",
+              "uuid": "23c009fc-89ac-4c33-b5e7-c47a4e9b2ea6",
+              "parentUUID": "0970f3d2-1d0b-4e87-9e27-63a3ed6e40b1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4d47e593-0ce2-4524-863f-c70b44df7250"
+            "23c009fc-89ac-4c33-b5e7-c47a4e9b2ea6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 631,
+          "duration": 490,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

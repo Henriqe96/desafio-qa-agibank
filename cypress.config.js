@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: '9c2y3g',
   e2e: {
     baseUrl: "https://blog.agibank.com.br",
     defaultCommandTimeout: 10000,

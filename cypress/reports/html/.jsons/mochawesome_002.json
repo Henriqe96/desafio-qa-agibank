@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-09-29T13:38:12.296Z",
+    "end": "2026-09-29T13:38:12.981Z",
+    "duration": 685,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8272debf-1096-4b08-a4a9-fa13888687fc",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test3_search_bug.cy.js",
+      "file": "cypress\\e2e\\test3_search_bug.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ae9ec7f6-817e-48e9-a735-54536acd43d6",
+          "title": "Cenário 3: Evidência de Bug na Busca (Lupa)",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve evidenciar que o campo de texto de busca não é exibido ao clicar na lupa",
+              "fullTitle": "Cenário 3: Evidência de Bug na Busca (Lupa) Deve evidenciar que o campo de texto de busca não é exibido ao clicar na lupa",
+              "timedOut": null,
+              "duration": 631,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// 1. Clica no ícone da lupa\n_HomePage.default.clickSearchIcon();\n// 2. Valida que o campo de busca NÃO EXISTE no DOM\n_HomePage.default.elements.searchInput().should('not.exist');",
+              "err": {},
+              "uuid": "4d47e593-0ce2-4524-863f-c70b44df7250",
+              "parentUUID": "ae9ec7f6-817e-48e9-a735-54536acd43d6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4d47e593-0ce2-4524-863f-c70b44df7250"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 631,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "Relatório Agibank",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
